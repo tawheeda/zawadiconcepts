@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cheers to Small Wins — Zawadi Concepts</title>
+  <meta name="description" content="Celebrating Resilience, Impact, and Collaboration in Entrepreneurship." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --magenta:#E91E63;
+      --purple:#6A1B9A;
+      --gold:#D4AF37;
+      --charcoal:#333333;
+      --ink:#222;
+      --bg:#fffdf9;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Lora',serif;scroll-behavior:smooth}
+    a{color:var(--magenta);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1200px;margin:0 auto;padding:0 1rem}
+    header.hero{
+      position:relative;
+      padding:6rem 0 4rem;
+      background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(212,175,55,0.15), transparent 60%),
+        radial-gradient(1200px 600px at -10% 20%, rgba(233,30,99,0.18), transparent 60%),
+        linear-gradient(180deg, #ffffff 0%, #fff6e6 100%);
+      overflow:hidden;
+    }
+    header .brand{display:flex;align-items:center;gap:1rem}
+    header .brand img{width:64px;height:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,.08))}
+    .eyebrow{letter-spacing:.12em;text-transform:uppercase;color:var(--purple);font-weight:700;font-family:'Montserrat',sans-serif}
+    h1{font-family:'Montserrat',sans-serif;color:var(--magenta);font-weight:700;font-size:clamp(2rem,5vw,3.25rem);margin:.25rem 0 .75rem}
+    .tagline{font-size:1.125rem;max-width:60ch;color:#444}
+    .chipbar{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.25rem 0}
+    .chip{border:1px solid rgba(0,0,0,.08);background:#fff;padding:.5rem .75rem;border-radius:999px;font-size:.9rem}
+    .cta{margin-top:1.25rem;display:flex;gap:.75rem;flex-wrap:wrap}
+    .btn{font-family:'Montserrat',sans-serif;border:none;border-radius:999px;padding:.9rem 1.2rem;font-weight:700;cursor:pointer}
+    .btn-primary{background:var(--magenta);color:white;box-shadow:0 8px 24px rgba(233,30,99,.25)}
+    .btn-outline{background:transparent;color:var(--purple);border:2px solid var(--purple)}
+    /* Sections */
+    section{padding:3.25rem 0;border-top:1px solid rgba(0,0,0,.06)}
+    h2{font-family:'Montserrat',sans-serif;color:var(--charcoal);font-weight:700;font-size:clamp(1.5rem,3vw,2rem);margin:0 0 1rem}
+    .grid{display:grid;gap:1.25rem}
+    @media (min-width: 800px){
+      .grid-2{grid-template-columns:1fr 1fr}
+      .grid-3{grid-template-columns:repeat(3,1fr)}
+    }
+    .card{
+      background:#fff;border-radius:18px;padding:1.25rem;border:1px solid rgba(0,0,0,.06);
+      box-shadow:0 6px 20px rgba(0,0,0,.05);
+    }
+    .kicker{color:var(--purple);font-weight:700;font-family:'Montserrat',sans-serif;margin-bottom:.25rem}
+    .list{margin:.5rem 0;padding:0 1rem}
+    .tier{border-left:6px solid var(--gold)}
+    .tier h3{margin:.25rem 0 .5rem;font-family:'Montserrat',sans-serif}
+    .price{font-weight:700;color:var(--magenta)}
+    .pill{display:inline-block;margin:.25rem .35rem 0 0;padding:.35rem .6rem;border-radius:999px;background:rgba(212,175,55,.1);border:1px dashed var(--gold);font-size:.85rem}
+    .footer{padding:2rem 0;background:#121212;color:#eee}
+    .footer a{color:#fff;text-decoration:underline}
+    .logo-inline{height:22px;vertical-align:middle}
+    /* Simple accordion */
+    details{background:#fff;border-radius:16px;padding:1rem;border:1px solid rgba(0,0,0,.06)}
+    details + details{margin-top:.75rem}
+    summary{cursor:pointer;list-style:none;font-family:'Montserrat',sans-serif;font-weight:700;color:var(--charcoal)}
+    summary::-webkit-details-marker{display:none}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="brand">
+        <img src="assets/zawadi-logo.png" alt="Zawadi Concepts logo" />
+        <div>
+          <div class="eyebrow">Zawadi Concepts Presents</div>
+          <h1>Cheers to Small Wins</h1>
+        </div>
+      </div>
+      <p class="tagline">Celebrating Resilience, Impact, and Collaboration in Entrepreneurship.</p>
+      <div class="chipbar">
+        <span class="chip">09 December 2025</span>
+        <span class="chip">The Fortress Venue, Edenvale</span>
+        <span class="chip">South Africa</span>
+      </div>
+      <div class="cta">
+        <a class="btn btn-primary" href="#sponsorship">View Sponsorship Packages</a>
+        <a class="btn btn-outline" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="overview">
+    <div class="container grid grid-2">
+      <div class="card">
+        <div class="kicker">Concept Overview</div>
+        <p>Entrepreneurship is a journey often defined by resilience, risk, and reinvention. <strong>Cheers to Small Wins</strong> is more than a celebration — it is a purpose‑driven gathering that recognises the spirit of entrepreneurship while fostering collaboration, growth, and renewed purpose for the year ahead.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="kicker">Purpose & Objectives</div>
+          <ul class="list">
+            <li>Celebrate resilience and inspire renewed hope</li>
+            <li>Facilitate meaningful connections & collaboration</li>
+            <li>Create visibility for brands and entrepreneurs</li>
+            <li>Highlight the human side of entrepreneurship</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="kicker">Strategic Relevance to Corporates</div>
+          <p>Connect with the heartbeat of South Africa’s economy — its small business sector — while supporting transformation, ESD, and empowerment goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="highlights">
+    <div class="container">
+      <h2>Event Highlights</h2>
+      <div class="grid grid-3">
+        <div class="card"><strong>Keynotes</strong><p>Inspiring talks from leaders and founders.</p></div>
+        <div class="card"><strong>Panels</strong><p>Actionable insights and candid stories.</p></div>
+        <div class="card"><strong>Networking Lounge</strong><p>Curated meetups and brand activations.</p></div>
+        <div class="card"><strong>Celebration Moments</strong><p>Toast to small wins and resilient journeys.</p></div>
+        <div class="card"><strong>Live Entertainment</strong><p>Feel‑good performances to close the year.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="audience">
+    <div class="container">
+      <h2>Target Audience</h2>
+      <p class="card">Small business owners, startup founders, corporate leaders, ESD managers, business support organisations, funders, and development agencies.</p>
+    </div>
+  </section>
+
+  <section id="sponsorship">
+    <div class="container">
+      <h2>Sponsorship Packages</h2>
+      <details open class="tier">
+        <summary><span class="price">Title Sponsor – R250,000</span></summary>
+        <div class="list">
+          <div class="pill">Exclusive naming rights</div>
+          <div class="pill">Keynote address</div>
+          <div class="pill">Full‑scale branding</div>
+          <div class="pill">Sponsor 10 entrepreneurs</div>
+          <div class="pill">Prime exhibition</div>
+          <div class="pill">Media + 10 passes</div>
+        </div>
+      </details>
+      <details class="tier">
+        <summary><span class="price">Platinum Sponsor – R100,000</span></summary>
+        <ul class="list">
+          <li>Branding as Platinum Sponsor</li>
+          <li>Panel participation</li>
+          <li>Sponsor 5 entrepreneurs</li>
+          <li>6 complimentary passes + activation area</li>
+        </ul>
+      </details>
+      <details class="tier">
+        <summary><span class="price">Golf Sponsor – R75,000</span></summary>
+        <ul class="list">
+          <li>Branded golf networking experience</li>
+          <li>Sponsor 4 entrepreneurs</li>
+          <li>Co‑branding on entertainment segment</li>
+          <li>5 complimentary passes</li>
+        </ul>
+      </details>
+      <details class="tier">
+        <summary><span class="price">Silver Sponsor – R50,000</span></summary>
+        <ul class="list">
+          <li>Sponsor 3 entrepreneurs</li>
+          <li>Branding on event collateral</li>
+          <li>4 complimentary passes</li>
+        </ul>
+      </details>
+      <details class="tier">
+        <summary><span class="price">Bronze Sponsor – R30,000</span></summary>
+        <ul class="list">
+          <li>Sponsor 2 entrepreneurs</li>
+          <li>Branding on selected materials</li>
+          <li>2 complimentary passes</li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <section id="value">
+    <div class="container grid grid-2">
+      <div class="card">
+        <h2>Why Partner With Us</h2>
+        <p>Invest meaningfully in entrepreneurial empowerment, align with national transformation goals, and position your brand as a champion of innovation.</p>
+      </div>
+      <div class="card">
+        <h2>Key Info</h2>
+        <ul class="list">
+          <li><strong>Date:</strong> 09 December 2025</li>
+          <li><strong>Venue:</strong> The Fortress Venue, Ohm Street Klipfontien 12‑lr, Edenvale, South Africa</li>
+          <li><strong>Organiser:</strong> Zawadi Concepts</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container grid grid-2">
+      <div class="card">
+        <h2>Contact</h2>
+        <p><strong>Neo Peete</strong> — Founder & Director, Zawadi Concepts</p>
+        <p>Email: <a href="mailto:neo.peete@zawadiconcepts.co.za">neo.peete@zawadiconcepts.co.za</a><br/>Phone: <a href="tel:+27761581110">076 158 1110</a><br/>Web: <a href="https://www.zawadiconcepts.co.za" target="_blank" rel="noopener">www.zawadiconcepts.co.za</a></p>
+      </div>
+      <div class="card">
+        <h2>Quick Action</h2>
+        <p>Download the sponsorship package and get in touch to secure your slot.</p>
+        <a class="btn btn-primary" href="assets/Cheers_to_Small_Wins_Sponsorship_Package.docx" download>Download Sponsorship Pack</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p style="margin:0">© <span id="y"></span> Zawadi Concepts · Cheers to Small Wins</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // Basic keyboard focus for details toggles
+    document.querySelectorAll('summary').forEach(s => {
+      s.setAttribute('tabindex','0');
+      s.addEventListener('keydown', (e)=>{
+        if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); s.click(); }
+      });
+    });
+  </script>
+</body>
+</html>
