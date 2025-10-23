@@ -42,6 +42,10 @@
     .chipbar{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.25rem 0}
     .chip{border:1px solid rgba(0,0,0,.08);background:#fff;padding:.5rem .75rem;border-radius:999px;font-size:.9rem;white-space:nowrap}
 
+    /* Hide chipbar scrollbar (keep swipe) */
+    .chipbar{-ms-overflow-style:none;scrollbar-width:none}
+    .chipbar::-webkit-scrollbar{display:none}
+
     /* Buttons */
     .cta{margin-top:1.25rem;display:flex;gap:.75rem;flex-wrap:wrap}
     .btn{font-family:'Montserrat',sans-serif;border:none;border-radius:999px;padding:.9rem 1.2rem;font-weight:700;cursor:pointer}
@@ -85,19 +89,20 @@
       header .brand{flex-direction:column;align-items:flex-start}
       header .brand img{width:220px}
       .tagline{font-size:1rem}
-      .chipbar{
-        flex-wrap:nowrap;
-        overflow-x:auto;
-        -webkit-overflow-scrolling:touch;
-        padding-bottom:.25rem;
-        gap:.5rem;
-      }
+
+.chipbar{
+    flex-wrap: wrap;       /* was: nowrap */
+    overflow-x: visible;   /* was: auto */
+    padding-bottom: 0;     /* optional: no extra space */
+  }
+
       .cta{flex-direction:column}
       .btn{width:100%; text-align:center}
       .grid-2,.grid-3{grid-template-columns:1fr !important}
       section{padding:2.25rem 0}
       .card{padding:1rem}
     }
+
     @media (max-width: 420px){
       header .brand img{width:180px}
       h1{font-size:1.9rem}
