@@ -21,6 +21,8 @@
     a{color:var(--magenta);text-decoration:none}
     a:hover{text-decoration:underline}
     .container{max-width:1200px;margin:0 auto;padding:0 1rem}
+
+    /* Hero */
     header.hero{
       position:relative;
       padding:6rem 0 4rem;
@@ -35,12 +37,17 @@
     .eyebrow{letter-spacing:.12em;text-transform:uppercase;color:var(--purple);font-weight:700;font-family:'Montserrat',sans-serif}
     h1{font-family:'Montserrat',sans-serif;color:var(--magenta);font-weight:700;font-size:clamp(2rem,5vw,3.25rem);margin:.25rem 0 .75rem}
     .tagline{font-size:1.125rem;max-width:60ch;color:#444}
+
+    /* Chips */
     .chipbar{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.25rem 0}
-    .chip{border:1px solid rgba(0,0,0,.08);background:#fff;padding:.5rem .75rem;border-radius:999px;font-size:.9rem}
+    .chip{border:1px solid rgba(0,0,0,.08);background:#fff;padding:.5rem .75rem;border-radius:999px;font-size:.9rem;white-space:nowrap}
+
+    /* Buttons */
     .cta{margin-top:1.25rem;display:flex;gap:.75rem;flex-wrap:wrap}
     .btn{font-family:'Montserrat',sans-serif;border:none;border-radius:999px;padding:.9rem 1.2rem;font-weight:700;cursor:pointer}
     .btn-primary{background:var(--magenta);color:white;box-shadow:0 8px 24px rgba(233,30,99,.25)}
     .btn-outline{background:transparent;color:var(--purple);border:2px solid var(--purple)}
+
     /* Sections */
     section{padding:3.25rem 0;border-top:1px solid rgba(0,0,0,.06)}
     h2{font-family:'Montserrat',sans-serif;color:var(--charcoal);font-weight:700;font-size:clamp(1.5rem,3vw,2rem);margin:0 0 1rem}
@@ -59,14 +66,44 @@
     .tier h3{margin:.25rem 0 .5rem;font-family:'Montserrat',sans-serif}
     .price{font-weight:700;color:var(--magenta)}
     .pill{display:inline-block;margin:.25rem .35rem 0 0;padding:.35rem .6rem;border-radius:999px;background:rgba(212,175,55,.1);border:1px dashed var(--gold);font-size:.85rem}
+
+    /* Footer */
     .footer{padding:2rem 0;background:#121212;color:#eee}
-    .footer a{color:#fff;text-decoration:underline}
+    .footer a{color:#fff;text-decoration:none}
+    .footer a:hover{text-decoration:none} /* keep the credit link non-underlined */
     .logo-inline{height:22px;vertical-align:middle}
-    /* Simple accordion */
+
+    /* Accordion */
     details{background:#fff;border-radius:16px;padding:1rem;border:1px solid rgba(0,0,0,.06)}
     details + details{margin-top:.75rem}
     summary{cursor:pointer;list-style:none;font-family:'Montserrat',sans-serif;font-weight:700;color:var(--charcoal)}
     summary::-webkit-details-marker{display:none}
+
+    /* ===== Mobile Enhancements ===== */
+    @media (max-width: 768px){
+      header.hero{padding:3.75rem 0 2.5rem}
+      header .brand{flex-direction:column;align-items:flex-start}
+      header .brand img{width:220px}
+      .tagline{font-size:1rem}
+      .chipbar{
+        flex-wrap:nowrap;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+        padding-bottom:.25rem;
+        gap:.5rem;
+      }
+      .cta{flex-direction:column}
+      .btn{width:100%; text-align:center}
+      .grid-2,.grid-3{grid-template-columns:1fr !important}
+      section{padding:2.25rem 0}
+      .card{padding:1rem}
+    }
+    @media (max-width: 420px){
+      header .brand img{width:180px}
+      h1{font-size:1.9rem}
+      .chip{font-size:.85rem}
+      .pill{font-size:.8rem}
+    }
   </style>
 </head>
 <body>
@@ -96,7 +133,7 @@
     <div class="container grid grid-2">
       <div class="card">
         <div class="kicker">Concept Overview</div>
-        <p>Entrepreneurship is a journey often defined by resilience, risk, and reinvention. <strong>Cheers to Small Wins</strong> is more than a celebration — it is a purpose‑driven gathering that recognises the spirit of entrepreneurship while fostering collaboration, growth, and renewed purpose for the year ahead.</p>
+        <p>Entrepreneurship is a journey often defined by resilience, risk, and reinvention. <strong>Cheers to Small Wins</strong> is more than a celebration — it is a purpose-driven gathering that recognises the spirit of entrepreneurship while fostering collaboration, growth, and renewed purpose for the year ahead.</p>
       </div>
       <div class="grid">
         <div class="card">
@@ -124,7 +161,7 @@
         <div class="card"><strong>Panels</strong><p>Actionable insights and candid stories.</p></div>
         <div class="card"><strong>Networking Lounge</strong><p>Curated meetups and brand activations.</p></div>
         <div class="card"><strong>Celebration Moments</strong><p>Toast to small wins and resilient journeys.</p></div>
-        <div class="card"><strong>Live Entertainment</strong><p>Feel‑good performances to close the year.</p></div>
+        <div class="card"><strong>Live Entertainment</strong><p>Feel-good performances to close the year.</p></div>
       </div>
     </div>
   </section>
@@ -144,7 +181,7 @@
         <div class="list">
           <div class="pill">Exclusive naming rights</div>
           <div class="pill">Keynote address</div>
-          <div class="pill">Full‑scale branding</div>
+          <div class="pill">Full-scale branding</div>
           <div class="pill">Sponsor 10 entrepreneurs</div>
           <div class="pill">Prime exhibition</div>
           <div class="pill">Media + 10 passes</div>
@@ -164,7 +201,7 @@
         <ul class="list">
           <li>Branded golf networking experience</li>
           <li>Sponsor 4 entrepreneurs</li>
-          <li>Co‑branding on entertainment segment</li>
+          <li>Co-branding on entertainment segment</li>
           <li>5 complimentary passes</li>
         </ul>
       </details>
@@ -197,7 +234,7 @@
         <h2>Key Info</h2>
         <ul class="list">
           <li><strong>Date:</strong> 09 December 2025</li>
-          <li><strong>Venue:</strong> The Fortress Venue, Ohm Street Klipfontien 12‑lr, Edenvale, South Africa</li>
+          <li><strong>Venue:</strong> The Fortress Venue, Ohm Street Klipfontien 12-lr, Edenvale, South Africa</li>
           <li><strong>Organiser:</strong> Zawadi Concepts</li>
         </ul>
       </div>
@@ -219,19 +256,20 @@
     </div>
   </section>
 
-<footer class="footer">
-<div class="container">
-<p style="margin:0">
-© <span id="y"></span> Zawadi Concepts · Cheers to Small Wins ·
-Website Designed by <a href="https://ltdevstudio.co.za" target="_blank" rel="noopener" style="text-decoration:none; color:inherit;"><strong>LT Dev Studio</strong></a>
-</p>
-</div>
-</footer>
+  <footer class="footer">
+    <div class="container">
+      <p style="margin:0">
+        © <span id="y"></span> Zawadi Concepts · Cheers to Small Wins ·
+        Website Designed by <a href="https://ltdevstudio.co.za" target="_blank" rel="noopener"><strong>LT Dev Studio</strong></a>
+      </p>
+    </div>
+  </footer>
 
   <script>
     // Set current year
     document.getElementById('y').textContent = new Date().getFullYear();
-    // Basic keyboard focus for details toggles
+
+    // Keyboard support for accordion
     document.querySelectorAll('summary').forEach(s => {
       s.setAttribute('tabindex','0');
       s.addEventListener('keydown', (e)=>{
